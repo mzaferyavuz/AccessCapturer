@@ -1,0 +1,55 @@
+﻿@*@using AccessCapturer.Models*@
+@model AccessCapturer.Models.Accessers
+
+
+@section CssFiles{
+
+}
+
+@section JsFiles{
+}
+
+<div class="m-grid m-grid-responsive-md m-grid-demo">
+    <div class="m-grid-row">
+        <div class="m-grid-col m-grid-col-middle m-grid-col-center" style="padding: 30px; height: 400px">
+            <div class="m-grid m-grid-full-height">
+                <div class="m-grid-col m-grid-col-middle m-grid-col-center bg-red font-white" style="padding: 20px;">
+                        <img src="@Model.firstImage" width="200" height="250" />
+                    <br>@Model.firtsName  @Model.firstSurname
+                    <br>@Model.firstCardNu
+                    <br>@Model.firstDirection
+                </div>
+            </div>
+        </div>
+        <div class="m-grid-col m-grid-col-middle m-grid-col-center" style="padding: 30px; height: 400px">
+            <div class="m-grid m-grid-full-height">
+                <div class="m-grid-col m-grid-col-middle m-grid-col-center bg-green font-white" style="padding: 20px;">
+                    <img src="@Model.secondImage" width="200" height="250" />
+                    <br>@Model.secondName  @Model.secondSurname
+                    <br>@Model.secondCardNu
+                    <br>@Model.secondDirection
+                </div>
+            </div>
+        </div>
+        <div class="m-grid-col m-grid-col-middle m-grid-col-center" style="padding: 30px; height: 400px">
+            <div class="m-grid m-grid-full-height">
+                <div class="m-grid-col m-grid-col-middle m-grid-col-center bg-yellow font-white" style="padding: 20px;">
+                    <img src="@Model.thirdImage" width="200" height="250"/>
+                    <br>@Model.thirdName  @Model.thirdSurname
+                    <br>@Model.thirdCardNu
+                    <br>@Model.thirdDirection
+                </div>
+            </div>
+        </div>
+        @*<div class="m-grid-col m-grid-col-middle m-grid-col-center" style="padding: 30px; height: 400px">
+            <div class="m-grid m-grid-full-height">
+                <div class="m-grid-col m-grid-col-middle m-grid-col-center bg-blue font-white" style="padding: 20px;">
+                    <img src="@Model.forthImage" width="200" height="250"/>
+                    <br>@Model.forthName  @Model.forthSurname
+                    <br>@Model.forthCardNu
+                    <br>@Model.forthImage
+                </div>
+            </div>
+        </div>*@
+    </div>
+</div>
